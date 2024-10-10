@@ -1,43 +1,47 @@
 /* Global Styles */
 * {
     margin: 0;
-    padding: 0;
+    padding: 10;
     box-sizing: border-box;
 }
 header {
-    background-color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 40px;
+    color: #fff;
+    display: inline-block;
 }
 
 header h1 span {
-    color: #ff7a22;
+    color: #399216;
 }
 
 nav ul {
-    display: flex;
-    gap: 15px;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-nav a {
+nav ul li {
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #399216;
 }
 
 
@@ -51,21 +55,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Hero Section */
 .hero {
@@ -95,7 +84,7 @@ a {
 }
 
 .btn-primary {
-    background-color: #ff6600;
+    background-color: #399216;
     color: rgb(37, 39, 37);
     padding: 0.8rem 3rem;
     border-radius: 25px;
@@ -110,7 +99,7 @@ a {
 .btn-secondary {
     background-color: #f8f3f3;
     color: #ff6600;
-    border: 2px solid #ff6600;
+    border: 2px solid #83a885;
     padding: 0.8rem 2rem;
     border-radius: 25px;
     font-weight: 600;
