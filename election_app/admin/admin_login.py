@@ -11,7 +11,7 @@ def admin_dashboard():
         return render_template('admin_dashboard.html', admin_id=admin_id, admin_username=admin_username)
     else:
         flash('You must log in to access the dashboard.', 'warning')
-        return redirect(url_for('admin_bp.login_admin'))  # Redirect to login if not logged in
+        return redirect(url_for('admin.login_admin'))  # Redirect to login if not logged in
 
 @admin_bp.route('/login', methods=['GET', 'POST'])
 def login_admin():

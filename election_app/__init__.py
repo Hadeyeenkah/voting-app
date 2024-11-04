@@ -37,6 +37,7 @@ def check_elections(app):
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
 
+    # app.register_blueprint(admin_bp) # just added this now
     
     app.config.from_mapping(
         SECRET_KEY='dev',
@@ -45,7 +46,7 @@ def create_app(test_config=None):
         MAIL_PORT=1025,
         MAIL_USE_TLS=False,
         MAIL_USE_SSL=False,
-        MAIL_DEFAULT_SENDER='christianigwebuike30@gmail.com',
+        MAIL_DEFAULT_SENDER='danielpreciouschinedu@gmail.com@gmail.com',
     )
 
     app.config['MAIL_SERVER'] = 'localhost'
@@ -113,3 +114,8 @@ def create_app(test_config=None):
 
 
     return app
+
+app = create_app()
+
+if __name__ == "__main__":
+    app.run(debug=True)

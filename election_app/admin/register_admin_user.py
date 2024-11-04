@@ -10,7 +10,7 @@ MAX_ADMINS = 5
 def register_admin():
     if request.method == 'POST':
         # Check the current count of admins
-        current_admin_count = mongo.db.admins.find().count()
+        current_admin_count = mongo.db.admins.count_documents({})
 
         if current_admin_count >= MAX_ADMINS:
             flash('Maximum number of admin users reached. Cannot add more.', 'error')

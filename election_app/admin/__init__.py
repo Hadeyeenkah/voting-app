@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-admin_bp = Blueprint('admin', __name__, url_prefix='/admin')
+admin_bp = Blueprint('admin', __name__)
 
 from .admin_login import login_admin
 from .create_candidate import register_candidate
