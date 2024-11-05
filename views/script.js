@@ -1,3 +1,4 @@
+
 function animateCounter(id, start, end, duration) {
     const element = document.getElementById(id);
     let startTimestamp = null;
@@ -20,4 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
     animateCounter("polling-units", 0, 176846, 3000);   // Example: 176,846 polling units
     animateCounter("parties", 0, 18, 2000);             // Example: 18 registered political parties
 });
+
 
